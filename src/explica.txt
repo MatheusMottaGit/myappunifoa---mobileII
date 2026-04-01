@@ -1,0 +1,2 @@
+npm i - para instalar os pacotes
+npx expo start - iniciar o app
