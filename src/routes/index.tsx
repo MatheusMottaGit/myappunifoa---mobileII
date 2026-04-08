@@ -5,9 +5,7 @@ import { PrivateRoutes } from './PrivateRoutes';
 
 
 export function NavigationRoutes() {
-  const [user, setUser] = useState({
-    name: 'Thiaguinho'
-  });
+  const [user, setUser] = useState();
 
   const Routes = useCallback(() => {
     if (!user) {

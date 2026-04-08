@@ -6,8 +6,11 @@ import {
   TouchableOpacity
 } from "react-native";
 import { PublicStackParamsList } from "../../routes/PublicRoutes";
+import { useAuthContext } from "../../contexts/auth.context";
 
 export function Login() {
+  const { user } = useAuthContext();
+  console.log(user);
   const navigation = useNavigation<StackNavigationProp<PublicStackParamsList>>()
   return (
     <View className="flex-1 items-center justify-center">
